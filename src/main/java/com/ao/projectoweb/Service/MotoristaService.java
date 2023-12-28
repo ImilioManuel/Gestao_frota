@@ -1,6 +1,6 @@
 package com.ao.projectoweb.Service;
 
-import com.ao.projectoweb.Condutor.Motorista;
+import com.ao.projectoweb.Pessoa.Motorista;
 import com.ao.projectoweb.Repository.MotoristaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,8 @@
-package com.ao.projectoweb.Condutor;
+package com.ao.projectoweb.Pessoa;
 
-import com.ao.projectoweb.ComponentesDoCondutor.CartaDeConducao;
-import com.ao.projectoweb.ComponentesDoCondutor.Contacto;
-import com.ao.projectoweb.ComponentesDoCondutor.Endereco;
+
+import com.ao.projectoweb.ComponentesDaPessoa.Contacto;
+import com.ao.projectoweb.ComponentesDaPessoa.Endereco;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -11,14 +11,13 @@ import lombok.Setter;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.UUID;
 
 @MappedSuperclass
 @Getter
 @Setter
 @EqualsAndHashCode(of = {"id"})
-public abstract class Condutor implements Serializable {
+public abstract class Pessoa implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
     @Id
@@ -31,17 +30,14 @@ public abstract class Condutor implements Serializable {
     @OneToOne
     private Endereco endereco;
     @OneToOne
-    private CartaDeConducao cartaDeConducao;
-    @OneToOne
     private Contacto contacto;
-    public Condutor(){}
-    public Condutor(String nome,String sobrenome, String genero, LocalDate dataNascimento, Endereco endereco, CartaDeConducao cartaDeConducao, Contacto contacto) {
+    public Pessoa(){}
+    public Pessoa(String nome, String sobrenome, String genero, LocalDate dataNascimento, Endereco endereco, Contacto contacto) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.genero = genero;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
-        this.cartaDeConducao = cartaDeConducao;
         this.contacto = contacto;
     }
 }

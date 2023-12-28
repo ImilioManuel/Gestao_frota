@@ -1,6 +1,6 @@
 package com.ao.projectoweb.Repository;
 
-import com.ao.projectoweb.ComponentesDoCondutor.Endereco;
+import com.ao.projectoweb.ComponentesDaPessoa.Endereco;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

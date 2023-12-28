@@ -1,6 +1,6 @@
 package com.ao.projectoweb.Service;
 
-import com.ao.projectoweb.ComponentesDoCondutor.Contacto;
+import com.ao.projectoweb.ComponentesDaPessoa.Contacto;
 import com.ao.projectoweb.Repository.ContactoMotoristaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.ao.projectoweb.ComponentesDoCondutor;
+package com.ao.projectoweb.ComponentesDaPessoa;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,6 +1,6 @@
 package com.ao.projectoweb.Repository;
 
-import com.ao.projectoweb.Condutor.Motorista;
+import com.ao.projectoweb.Pessoa.Motorista;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

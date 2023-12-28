@@ -26,8 +26,8 @@ public class FrotasVeicular implements Serializable {
     private UUID id;
     private String nome;
     @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "TB_FrotasVeiculo", joinColumns = @JoinColumn(name = "id"))
-    @Column(name = "id_veiculo",length = 500000)
+    @CollectionTable(name = "TB_FrotasVeiculo", joinColumns = @JoinColumn(name = "id_frota"))
+    @Column(name = "id_veiculo",length = 500)
     List<Veiculo> veiculo;
 
     public FrotasVeicular() {

@@ -1,5 +1,6 @@
-package com.ao.projectoweb.ComponentesDoCondutor;
+package com.ao.projectoweb.ComponentesDaPessoa.Condutor;
 
+import com.ao.projectoweb.Pessoa.Motorista;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -22,6 +23,8 @@ public class CartaDeConducao implements Serializable {
     private String dataEmissaoCarteira;
     private String dataValidadeCarteira;
     private boolean habilitacaoAtiva;
+    @OneToOne
+    private Motorista motorista;
     public CartaDeConducao(){}
     public CartaDeConducao(String numeroCarteira, String categoriaCarteira, String dataEmissaoCarteira, String dataValidadeCarteira, boolean habilitacaoAtiva) {
         this.numeroCarteira = numeroCarteira;

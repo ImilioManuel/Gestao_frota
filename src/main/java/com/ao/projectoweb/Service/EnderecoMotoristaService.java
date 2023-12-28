@@ -1,6 +1,6 @@
 package com.ao.projectoweb.Service;
 
-import com.ao.projectoweb.ComponentesDoCondutor.Endereco;
+import com.ao.projectoweb.ComponentesDaPessoa.Endereco;
 import com.ao.projectoweb.Repository.EnderecoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -2,7 +2,7 @@ package com.ao.projectoweb.Veiculos;
 
 
 import com.ao.projectoweb.ComponentesDoVeiculo.Pneu;
-import com.ao.projectoweb.Condutor.Motorista;
+import com.ao.projectoweb.Pessoa.Motorista;
 import com.ao.projectoweb.Interfaces.IMotorista;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;

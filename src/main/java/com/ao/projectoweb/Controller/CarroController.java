@@ -1,14 +1,8 @@
 package com.ao.projectoweb.Controller;
 
-import com.ao.projectoweb.ComponentesDoCondutor.CartaDeConducao;
-import com.ao.projectoweb.ComponentesDoCondutor.Contacto;
-import com.ao.projectoweb.ComponentesDoCondutor.Endereco;
 import com.ao.projectoweb.ComponentesDoVeiculo.Motor;
 import com.ao.projectoweb.ComponentesDoVeiculo.Pneu;
-import com.ao.projectoweb.Condutor.Motorista;
 import com.ao.projectoweb.DTO.CarroDTO;
-import com.ao.projectoweb.DTO.MotoristaDTO;
-import com.ao.projectoweb.GestaoFrotas.FrotasVeicular;
 import com.ao.projectoweb.Service.CarroService;
 import com.ao.projectoweb.Service.FrotasVeicularService;
 import com.ao.projectoweb.Service.MotorService;
@@ -25,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.util.Optional;
 
 @RestController
 @CrossOrigin(origins = "*")
