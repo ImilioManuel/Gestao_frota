@@ -24,23 +24,20 @@ public class RotasLogisticas implements Serializable {
     private UUID id;
     private String origem;
     private String destino;
-    @OneToMany
-    List<Mota> mota;
-    @OneToMany
-    List<Carro> carro;
-    @OneToMany
-    List<Bicicleta> bicicleta;
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "TB_RotasVeiculo", joinColumns = @JoinColumn(name = "id_frota"))
+    @Column(name = "id_veiculo",length = 500)
+    List<Veiculo> veiculo;
     public RotasLogisticas() {
     }
     public RotasLogisticas(String origem, String destino) {
         this.origem = origem;
         this.destino = destino;
     }
-    public RotasLogisticas(String origem, String destino, List<Mota> mota, List<Carro> carro, List<Bicicleta> bicicleta) {
+
+    public RotasLogisticas(String origem, String destino, List<Veiculo> veiculo) {
         this.origem = origem;
         this.destino = destino;
-        this.mota = mota;
-        this.carro = carro;
-        this.bicicleta = bicicleta;
+        this.veiculo = veiculo;
     }
 }

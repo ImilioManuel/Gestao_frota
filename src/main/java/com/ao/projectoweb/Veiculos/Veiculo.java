@@ -37,8 +37,6 @@ public abstract class Veiculo implements Serializable {
     private FrotasVeicular frotasVeicular;
     @ManyToOne
     private Motorista motorista;
-    @ManyToOne
-    private Mecanico mecanico;
 
     public Veiculo() {
     }
